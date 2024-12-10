@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../styles/index.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+<body>
+    <div id="login-content">
+    <h1>Login - My todo list - </h1>
+    <form action="/login" method="post" id="login-form">
+        <p>
+        <label for="user">username</label>
+        <input type="text" name="username" id="user">
+        </p>
+        <p>
+        <label for="password">password</label>
+        <input type="text" name="password" id="password">
+        </p>
+        <button type="submit">Login</button>
+    </form>
+    </div>
+
+    <div id="register-content" class="hidden">
+        <h1>Register - My todo list - </h1>
+
+    <form action="/register" method="post" id="register-form">
+        <p>
+        <label for="user">username</label>
+        <input type="text" name="username" id="user">
+        </p>
+        <p>
+        <label for="password">password</label>
+        <input type="text" name="password" id="password">
+        </p>
+        <button type="submit">register</button>
+    </form>
+    <p id="response-message"></p>
+    </div>
+    <a href="#" id="link-login" class="hidden">login</a>
+    <a href="#" id="link-register">register</a>
+    <script src="./../scripts/login.js"></script>
+</body>
+</html>
